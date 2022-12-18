@@ -3,7 +3,7 @@ $user = "jenkins-user"
 $password = "jenkins-token-for-user"
 
 # Jenkins url
-$jenkins_host_url = https://jenkins.lab123.local
+$jenkins_host_url = "https://jenkins.lab123.local"
 
 # Build auth header
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $user, $password)))
