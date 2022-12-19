@@ -15,5 +15,5 @@ $headers.Add('Authorization',('Basic {0}' -f $base64AuthInfo))
 # Quiet time
 $delay_time = "50sec"
 
-$url = "$jenkins_host_url/job/Test/job/dummy_pipeline/job/master/buildWithParameters?msg=kala2&delay=$delay_time"
+$url = "$jenkins_host_url/job/Test/job/dummy_pipeline/job/master/buildWithParameters?msg=hello&delay=$delay_time"
 Invoke-WebRequest -Headers $headers -Method Post -Uri $url
